@@ -51,7 +51,7 @@ Pada soal ini untuk menemukan perintah Query Select bisa seperti berikut
 Filter Expression : **mysql contains select or mysql contains SELECT**
 
 ## 5
-![soal5](https://user-images.githubusercontent.com/55140514/134503749-80f58677-a09a-4585-a040-239f26eccc5b.png)
+![image](https://user-images.githubusercontent.com/55140514/134700609-ed63596f-766d-4061-b5b9-3a03dead716e.png)
 ![soal5portal](https://user-images.githubusercontent.com/55140514/134680387-f49aade5-b050-41e2-b005-05791641d708.png)
 
 ## 6
