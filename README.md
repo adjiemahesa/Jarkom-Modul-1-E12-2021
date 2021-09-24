@@ -34,7 +34,13 @@ Pada soal ini diminta untuk mengakses web **basic.ichimarumaru.tech** dimana web
 4. Lalu, dimasukkan pada web tersebut *username* serta *password* nya dan akan keluar web berikut
 ![soal3basic](https://user-images.githubusercontent.com/55140514/134686999-b471216f-2e73-440f-a5ea-a6fc7931fb98.png)
 
+*Notes*
+Untuk soal ini bisa juga kita filter terlebih dahulu untuk ke website **basic.ichimarumaru.tech** dengan menggunakan **http.host == "basic.ichimarumaru.tech"** seperti pada soal 1. kita lakukan ini agar hanya mendapatkan dan melihat *Credentials* yang hanya ada di web tersebut. Setelah kita filter baru kita lakukan langkah Find Packet seperti diatas. Hasilnya Seperti Berikut
+![image](https://user-images.githubusercontent.com/55140514/134687798-02fd0c41-8f01-4985-a9c5-b75cdeb6a189.png)
 
+### Jawaban
+Menggunakan Find Packet (**Edit -> find packet -> Packet Details -> String -> pada kolom kosong kita tulis Credential**)
+atau bisa juga menggunakan filter expression **http.host == "basic.ichimarumaru.tech"** terlebih dahulu
 ## 4
 ![soal4](https://user-images.githubusercontent.com/55140514/134679265-356b552a-5984-4964-b9a1-a3381d66e6dc.png)
 
