@@ -16,12 +16,24 @@ Filter Expression : **http.host == "ichimarumaru.tech**
 
 Webserver : **nginx/1.18.0 (Ubuntu)**
 
-## 2
-![soal2](https://user-images.githubusercontent.com/55140514/134503631-aa2f8b01-6e88-4d89-9ace-4a659c3abcc4.png)
+## Soal 2 (Mencari paket-paket dari web-web yang menggunakan Basic Authentication)
+1. Untuk mendapatkannya digunakan *Filter Expression* pada *Display Filter* **http.authorization contains Basic** atau bisa juga menggunakan **http.authbasic**
+![soal2](https://user-images.githubusercontent.com/55140514/134683594-d68dd7ba-7b98-4027-af8c-c6af64d540ed.png)
 
-## 3
+### Jawaban
+Filter Expression : **http.authorization contains Basic** atau **http.authbasic**
+
+## Soal 3 (Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!)
+Pada soal ini diminta untuk mengakses web **basic.ichimarumaru.tech** dimana web tersebut perlu memasukkan *username* serta *password* yang bisa kita cari menggunakan wireshark
+1. Untuk mendapatkannya *username* serta *password* kita bisa langsung menggunakan fitur **Find Packet** yang ada di edit. Lalu pada find Packet tersebut kita mengganti agar mencari Packet Details nya serta yang dicari adalah String. Lalu, kita isi pada kolom kosongnya **Credentials**.
+![image](https://user-images.githubusercontent.com/55140514/134686297-2ed6c695-4459-45c6-9b8e-5aee883f59e9.png)
+2. Nanti akan didapatkan seperti berikut
 ![soal3](![soal3basic](https://user-images.githubusercontent.com/55140514/134680374-bb8b83cf-1b89-4803-8dc0-1bd3c0e8da6d.png)
-https://user-images.githubusercontent.com/55140514/134503665-3833ae2e-84f4-4c61-9bf6-1934e4c98514.png)
+3. Lalu dicek padaa *Hypertext Transfer Protocol* pada authorization nya ada Credentials yang berisi **username:password** 
+![image](https://user-images.githubusercontent.com/55140514/134686797-47d37d56-196b-477a-972a-c4e1bb30cf9d.png)
+4. Lalu, dimasukkan pada web tersebut *username* serta *password* nya dan akan keluar web berikut
+![soal3basic](https://user-images.githubusercontent.com/55140514/134686999-b471216f-2e73-440f-a5ea-a6fc7931fb98.png)
+
 
 ## 4
 ![soal4](https://user-images.githubusercontent.com/55140514/134679265-356b552a-5984-4964-b9a1-a3381d66e6dc.png)
