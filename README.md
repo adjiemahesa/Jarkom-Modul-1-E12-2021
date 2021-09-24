@@ -51,8 +51,16 @@ Pada soal ini untuk menemukan perintah Query Select bisa seperti berikut
 Filter Expression : **mysql contains select or mysql contains SELECT**
 
 ## Soal 5 (Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!)
+Pengerjaan pada soal ini sama seperti pada soal nomor 4
+1. Pada *Display Filter* bisa kita isi *Filter Expression* **mysql contains insert or mysql contains INSERT**
 ![image](https://user-images.githubusercontent.com/55140514/134700609-ed63596f-766d-4061-b5b9-3a03dead716e.png)
+2. Untuk mendapatkan *username* dan *password* bisa kita lihat dari **MySQL Protocol** dan pada **Statement** diliat *values* nya
+![image](https://user-images.githubusercontent.com/55140514/134706330-e4f50f43-a4fa-4289-8588-9fe28ec271c2.png)
+3. Setelah itu kita ambil *username* dan *password* nya dan dimasukkan ke dalam web tersebut. Berikut adalah web-nya
 ![soal5portal](https://user-images.githubusercontent.com/55140514/134680387-f49aade5-b050-41e2-b005-05791641d708.png)
+
+### Jawaban
+Filter Expression : **mysql contains insert or mysql contains INSERT**
 
 ## 6
 
@@ -63,7 +71,16 @@ Filter Expression : **mysql contains select or mysql contains SELECT**
 ## 11
 ![soal11](https://user-images.githubusercontent.com/55140514/134503854-a805092d-5706-47f8-b343-73a898334b3b.png)
 
-## 12
+## 12 (Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!)
+Untuk pengerjaan nomor ini diperlukan server FTP terlebih dahulu. Kita menggunakan FileZilla dalam pembuatan server tersebut
+1. Membuat server FileZilla. Start Filezilla Server
+![image](https://user-images.githubusercontent.com/55140514/134707335-b4ce7080-1a55-448f-80b0-045aaffbd612.png)
+2. Pada FileZilla Serve GUI pencet Connect to FTP Filezilla FTP Server
+![image](https://user-images.githubusercontent.com/55140514/134707538-3070ef76-747a-4581-af51-e9d11b933bff.png)
+3. Lalu, pada Filezilla Client kita masukkan Host serta username nya. Setelah itu dipencet quickconnect
+![image](https://user-images.githubusercontent.com/55140514/134707676-de8f2ab9-f9e4-47f0-b675-abc4cb3b0cca.png)
+4. Setelah server FTP terbuat, kita bisa melakukan *Capture* di Wireshark. Pada wireshark 
+
 ![soal12](https://user-images.githubusercontent.com/55140514/134503887-0ad07ed6-c8f2-4165-b586-e03ffabbc02b.png)
 
 ## 13
