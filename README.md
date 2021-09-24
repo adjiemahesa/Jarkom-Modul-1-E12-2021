@@ -41,9 +41,14 @@ Untuk soal ini bisa juga kita filter terlebih dahulu untuk ke website **basic.ic
 ### Jawaban
 Menggunakan Find Packet (**Edit -> find packet -> Packet Details -> String -> pada kolom kosong kita tulis Credential**)
 atau bisa juga menggunakan filter expression **http.host == "basic.ichimarumaru.tech"** terlebih dahulu
-## 4
+
+## Soal 4 (Temukan paket mysql yang mengandung perintah query select!)
+Pada soal ini untuk menemukan perintah Query Select bisa seperti berikut
+1. Pada *Display Filter* bisa kita isi *Filter Expression* **mysql contains select** tetapi karena ada kemungkinan penulisan select dengan huruf kapital semua ada dan wireshark case sensitive maka kita menggunakan *Logical Operator* **Or** agar bisa mendapatkan semuanya. Maka filter akan menjadi **mysql contains select or mysql contains SELECT**. Hasil seperti berikut.
 ![soal4](https://user-images.githubusercontent.com/55140514/134679265-356b552a-5984-4964-b9a1-a3381d66e6dc.png)
 
+### Jawaban
+Filter Expression : **mysql contains select or mysql contains SELECT**
 
 ## 5
 ![soal5](https://user-images.githubusercontent.com/55140514/134503749-80f58677-a09a-4585-a040-239f26eccc5b.png)
