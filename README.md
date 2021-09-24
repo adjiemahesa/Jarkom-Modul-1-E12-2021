@@ -79,9 +79,11 @@ Untuk pengerjaan nomor ini diperlukan server FTP terlebih dahulu. Kita menggunak
 ![image](https://user-images.githubusercontent.com/55140514/134707538-3070ef76-747a-4581-af51-e9d11b933bff.png)
 3. Lalu, pada Filezilla Client kita masukkan Host serta username nya. Setelah itu dipencet quickconnect
 ![image](https://user-images.githubusercontent.com/55140514/134707676-de8f2ab9-f9e4-47f0-b675-abc4cb3b0cca.png)
-4. Setelah server FTP terbuat, kita bisa melakukan *Capture* di Wireshark. Pada wireshark 
-
+4. Setelah server FTP terbuat, kita bisa melakukan *Capture* di Wireshark. Pada wireshark kita isi di *Capture Display* nya dengan **port 21** agar menampilkan semua yang menggunakan port 21 / FTP. Seperti berikut
 ![soal12](https://user-images.githubusercontent.com/55140514/134503887-0ad07ed6-c8f2-4165-b586-e03ffabbc02b.png)
+
+### Jawaban
+Filter Expression : Pada *Capture Display* **port 21**
 
 ## 13
 
