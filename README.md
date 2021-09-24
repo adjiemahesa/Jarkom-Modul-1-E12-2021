@@ -4,7 +4,7 @@ Anggota :
 - Rahadian Adjie Mahesa	- 05111940000221
 - Afifan Syafaqo Yahya	- 05111940000234
  
-## Soal 1 (Menampilkan Webserver pada ichimarumaru.tech)
+## Soal 1 (Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!)
 1. Mengisi pada *Display Filter* **http.host == "ichimarumaru.tech"** untuk menampilkan host dengan domain ichimarumaru.tech
 ![soal1](https://user-images.githubusercontent.com/55140514/134492368-c9acdedd-b9d5-4173-9985-47c23252fa72.png)
 
@@ -16,7 +16,7 @@ Filter Expression : **http.host == "ichimarumaru.tech**
 
 Webserver : **nginx/1.18.0 (Ubuntu)**
 
-## Soal 2 (Mencari paket-paket dari web-web yang menggunakan Basic Authentication)
+## Soal 2 (Temukan paket dari web-web yang menggunakan basic authentication method!)
 1. Untuk mendapatkannya digunakan *Filter Expression* pada *Display Filter* **http.authorization contains Basic** atau bisa juga menggunakan **http.authbasic**
 ![soal2](https://user-images.githubusercontent.com/55140514/134683594-d68dd7ba-7b98-4027-af8c-c6af64d540ed.png)
 
