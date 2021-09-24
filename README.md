@@ -13,6 +13,7 @@ Anggota :
 
 ### Jawaban
 Filter Expression : **http.host == "ichimarumaru.tech**
+
 Webserver : **nginx/1.18.0 (Ubuntu)**
 
 ## 2
