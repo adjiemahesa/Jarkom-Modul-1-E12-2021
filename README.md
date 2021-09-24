@@ -50,7 +50,7 @@ Pada soal ini untuk menemukan perintah Query Select bisa seperti berikut
 ### Jawaban
 Filter Expression : **mysql contains select or mysql contains SELECT**
 
-## 5
+## Soal 5 (Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!)
 ![image](https://user-images.githubusercontent.com/55140514/134700609-ed63596f-766d-4061-b5b9-3a03dead716e.png)
 ![soal5portal](https://user-images.githubusercontent.com/55140514/134680387-f49aade5-b050-41e2-b005-05791641d708.png)
 
