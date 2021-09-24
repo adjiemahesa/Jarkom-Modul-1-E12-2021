@@ -1,9 +1,15 @@
 # Jarkom-Modul-1-E12-2021
-## 1
+## Soal 1 (Menampilkan Webserver pada ichimarumaru.tech)
+1. Mengisi pada *Display Filter* **http.host == "ichimarumaru.tech** untuk menampilkan host dengan domain ichimarumaru.tech
 ![soal1](https://user-images.githubusercontent.com/55140514/134492368-c9acdedd-b9d5-4173-9985-47c23252fa72.png)
+
+2. Untuk mencari webserver nya bisa kita gunakan follow TCP Stream dengan melakukan klik kanan pada salah satu hasil yang telah terfilter (disini dipilih yang GET / HTTP/1.1 karena ini adalah webnya) dan mencari kata-kata *Server*
 ![soal1Server](https://user-images.githubusercontent.com/55140514/134492375-f04a2029-289a-4ae0-847f-ffc8943e6053.png)
 
-### Langkah Pengerjaan
+### Jawaban
+Filter Expression : **http.host == "ichimarumaru.tech**
+Webserver : **nginx/1.18.0 (Ubuntu)**
+
 ## 2
 ![soal2](https://user-images.githubusercontent.com/55140514/134503631-aa2f8b01-6e88-4d89-9ace-4a659c3abcc4.png)
 
