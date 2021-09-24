@@ -28,7 +28,7 @@ Pada soal ini diminta untuk mengakses web **basic.ichimarumaru.tech** dimana web
 1. Untuk mendapatkannya *username* serta *password* kita bisa langsung menggunakan fitur **Find Packet** yang ada di edit. Lalu pada find Packet tersebut kita mengganti agar mencari Packet Details nya serta yang dicari adalah String. Lalu, kita isi pada kolom kosongnya **Credentials**.
 ![image](https://user-images.githubusercontent.com/55140514/134686297-2ed6c695-4459-45c6-9b8e-5aee883f59e9.png)
 2. Nanti akan didapatkan seperti berikut
-![soal3](![soal3basic](https://user-images.githubusercontent.com/55140514/134680374-bb8b83cf-1b89-4803-8dc0-1bd3c0e8da6d.png)
+![soal3](https://user-images.githubusercontent.com/55140514/134687110-cf3318ce-ed0d-41f8-b435-7bd9193c26a7.png)
 3. Lalu dicek padaa *Hypertext Transfer Protocol* pada authorization nya ada Credentials yang berisi **username:password** 
 ![image](https://user-images.githubusercontent.com/55140514/134686797-47d37d56-196b-477a-972a-c4e1bb30cf9d.png)
 4. Lalu, dimasukkan pada web tersebut *username* serta *password* nya dan akan keluar web berikut
