@@ -72,7 +72,7 @@ Filter Expression : **mysql contains insert or mysql contains INSERT**
 Berikut langkah-langkah pengerjaan soal ini
 1. Input **src port 80** sebagai filter pada kolom capture filter
 ![soal11](https://raw.githubusercontent.com/ALuthfiH/Image/image/Screenshot%20(233).png)
-2. Kemudian kami membuka situs **http://monta.if.its.ac.id/** agar paket yang berasal dari port 80 darpat diambil oleh wireshark
+2. Kemudian kami membuka situs **http://monta.if.its.ac.id/** agar paket yang berasal dari port 80 dapat diambil oleh wireshark
 ![image](https://raw.githubusercontent.com/ALuthfiH/Image/image/Screenshot%20(234).png)
 3. Berikut paket yang diambil dari port 80
 ![image](https://raw.githubusercontent.com/ALuthfiH/Image/image/Screenshot%20(235).png)
@@ -96,4 +96,12 @@ Filter Expression : Pada *Capture Display* **port 21**
 ## 14
 ![soal14](https://user-images.githubusercontent.com/55140514/134504096-2bc2fea0-e91b-41fc-89c2-48b1f2cc4784.png)
 
-## 15
+## Soal 15 (Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!)
+Berikut langkah-langkah pengerjaan soal nomor 15
+1. Pertama-tama kita harus melakukan pengecekkan terhadap IP Address kita sendiri. Kita dapat mengecek IP Address kita melalui setting ataupun Command Prompt. Berikut IP Address saya setelah dicek pada Command Prompt
+![ip](https://raw.githubusercontent.com/ALuthfiH/Image/image/Capture2.JPG)
+2. Setelah itu, input **ip src 192.168.100.8** sebagai filter pada kolom capture filter
+![filter](https://raw.githubusercontent.com/ALuthfiH/Image/image/Screenshot%20(236).png)
+3. Berikut paket yang berhasil ditangkap dari IP Address sendiri
+![hasil](https://raw.githubusercontent.com/ALuthfiH/Image/image/Screenshot%20(237).png)
+
