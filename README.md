@@ -62,12 +62,46 @@ Pengerjaan pada soal ini sama seperti pada soal nomor 4
 ### Jawaban
 Filter Expression : **mysql contains insert or mysql contains INSERT**
 
-## 6
+## Soal 6 (Cari username dan password ketika melakukan login ke FTP Server!)  
+1. mencari **username** dari FTP server yang sudah disediakan, kami menggunakan filter dengan format `ftp contains USER` untuk mencari usernama tersebut dan didapat bahwasannya  "*secretuser*" merupakan salah satu nama username yang dicari seperti gambar sebagai berikut  
+![image](https://user-images.githubusercontent.com/75328763/134771671-6e6918cc-0b35-45df-b983-a722f586f5ad.png)
+2. mencari **password** dari FTP server yang sama, kami menggunakan filter dengan format `ftp contains PASS` dan diapat sebagai gambar di bawah, bisa dilihat "aku.pengen.pw.aja" sebagaimana gambar berikut  
+![image](https://user-images.githubusercontent.com/75328763/134771689-fe2cc025-9903-4b1d-9871-125af178bc81.png)  
+  
+### Jawaban  
+Username : *secretuser*  
+Password : *aku.pengen.pw.aja*  
 
-## 7
-## 8
-## 9
-## 10
+## Soal 7 (Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf"))  
+1. untuk mencari 500 zip yang tersedia dimana salah satu dari itu ada yang mempunyai isi file pdf bernama "Real.pdf" kami menggunakan filter `ftp-data contains "Real.pdf"`  
+![image](https://user-images.githubusercontent.com/75328763/134772943-326bc3ef-eaa1-4d99-a950-42c812b6feac.png)  
+
+2. lalu kami membuka isi dari "Real.pdf" sebagaimana berikut.  
+![image](https://user-images.githubusercontent.com/75328763/134772995-b9bec706-6256-4837-8201-37c368adf7a8.png)  
+
+## Soal 8 (Cari paket yang menunjukan pengambilan file dari FTP tersebut!)  
+1. untuk mengetahui adanya pengambilan data (downloaded) dari FTP server yang telah disediakan, kami menggunakan filter `ftp contains RETR` unntuk menge-check apakah ada data yang berhasil didownload. dan yang kami temukan hasilnya adalah **tidak ada** sebagaimana gakmbar berikut  
+![image](https://user-images.githubusercontent.com/75328763/134772272-feeb993b-655a-46dc-a31d-ceb2dac434cb.png)  
+### Jawaban  
+**KOSONG*  
+
+## Soal 9 (Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!)  
+1. kami menggunakan filter `ftp-data.command contains "secret.zip"` untuk mencari file bernama "secret.zip" dan bisa dilihat ada banyak paket yang tersimpan, dipilih satu secara acak dan melakukan *follow TCP Stream* dan didapat adanya data dalam FTP tersebut sebagiamana gambar berikut  
+![image](https://user-images.githubusercontent.com/75328763/134772468-cfc1d646-8b24-4a04-8f82-1317ad7de8dd.png)  
+2. setelah itu kami download file tersebut dan direname dengan format *.zip* lalu dibuka dan muncul isi seperti dibawah ini.  
+![image](https://user-images.githubusercontent.com/75328763/134772510-d840ebad-8672-4d9a-96c8-cd5d1c56159b.png)
+
+## Soal 10 (Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!)  
+1. untuk membuka isi menggunkan password pad zip yang telah ditemukan pada soal seblumnya, kami mencari clue dengan membuka file "history.txt" menggunakan filter `ftp-data.command contains "history.txt"` sebagai berikut. ditunjukan bahwasannya clue password berada pada file "bukanapaapa.txt"  
+![image](https://user-images.githubusercontent.com/75328763/134772603-75a6adf9-51e8-4c57-a6b7-9e2844153e25.png)  
+
+2. lalu kami menggunakan filter lagi seperti `ftp-data.command contains "bukanapaapa.txt"` dan dilihat menggunakan *follow TCP Stream* kami menemukan sebuah string yang kami duga itu merupakan password dari "secrett.zip". passwordnya adalah `d1b1langbukanapaapajugagapercaya`. gambar sebagai berikut.  
+![image](https://user-images.githubusercontent.com/75328763/134772717-6745e329-bb57-4b1a-8414-926947d083e5.png)  
+
+3. kami lalu membuka file "secret.zip" menggunakan password tersbut dan terbukalah file yang bernama "Wanted.pdf" yang berisi sebagai berikut.  
+![image](https://user-images.githubusercontent.com/75328763/134772800-c4fba6ce-6640-482f-8fc0-5ed672a84240.png)
+
+
 ## Soal 11 (Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!)
 Berikut langkah-langkah pengerjaan soal ini
 1. Input **src port 80** sebagai filter pada kolom capture filter
@@ -91,21 +125,10 @@ Untuk pengerjaan nomor ini diperlukan server FTP terlebih dahulu. Kita menggunak
 ### Jawaban
 Filter Expression : Pada *Capture Display* **port 21**
 
-## Soal 13 (Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!)
-Berikut langkah-langkah pengerjaan soal
-1. Masukkan filter **dst port 443** pada kolom capture filter untuk menampilkan paket yang menuju port 443
-![filter](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(243).png)
-3. Berikut paket-paket yang menuju port 443 
-![paket](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(244).png)
+## 13
 
-## Soal 14 (Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!)
-Berikut langkah-langkah pengerjaan soal nomor 14
-1. Masukkan filter **dst host kemenag.go.id** pada kolom capture filter untuk menngambil paket
-![filter](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(239).png)
-3. Buka situs **https://www.kemenag.go.id/** agar paket dapat diambil oleh wireshark
-![situs](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(240).png)
-5. Berikut paket yang tujuannya ke **https://www.kemenag.go.id/**
-![paket](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(241).png)
+## 14
+![soal14](https://user-images.githubusercontent.com/55140514/134504096-2bc2fea0-e91b-41fc-89c2-48b1f2cc4784.png)
 
 ## Soal 15 (Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!)
 Berikut langkah-langkah pengerjaan soal nomor 15
