@@ -72,6 +72,10 @@ Filter Expression : **mysql contains insert or mysql contains INSERT**
 Berikut langkah-langkah pengerjaan soal ini
 1. Input **src port 80** sebagai filter pada kolom capture filter
 ![soal11](https://raw.githubusercontent.com/ALuthfiH/Image/image/Screenshot%20(233).png)
+2. Kemudian kami membuka situs **http://monta.if.its.ac.id/** agar paket yang berasal dari port 80 darpat diambil oleh wireshark
+![image](https://raw.githubusercontent.com/ALuthfiH/Image/image/Screenshot%20(234).png)
+3. Berikut paket yang diambil dari port 80
+![image](https://raw.githubusercontent.com/ALuthfiH/Image/image/Screenshot%20(235).png)
 
 ## 12 (Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!)
 Untuk pengerjaan nomor ini diperlukan server FTP terlebih dahulu. Kita menggunakan FileZilla dalam pembuatan server tersebut
