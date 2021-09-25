@@ -92,7 +92,11 @@ Untuk pengerjaan nomor ini diperlukan server FTP terlebih dahulu. Kita menggunak
 Filter Expression : Pada *Capture Display* **port 21**
 
 ## Soal 13 (Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!)
-
+Berikut langkah-langkah pengerjaan soal
+1. Masukkan filter **dst port 443** pada kolom capture filter untuk menampilkan paket yang menuju port 443
+![filter](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(243).png)
+3. Berikut paket-paket yang menuju port 443 
+![paket](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(244).png)
 
 ## Soal 14 (Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!)
 Berikut langkah-langkah pengerjaan soal nomor 14
