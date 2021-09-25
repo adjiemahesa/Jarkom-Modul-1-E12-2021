@@ -123,12 +123,24 @@ Untuk pengerjaan nomor ini diperlukan server FTP terlebih dahulu. Kita menggunak
 ![soal12](https://user-images.githubusercontent.com/55140514/134503887-0ad07ed6-c8f2-4165-b586-e03ffabbc02b.png)
 
 ### Jawaban
-Filter Expression : Pada *Capture Display* **port 21**
+Filter Expression : Pada *Capture Display* **port 21** 
 
-## 13
+## Soal 13 (Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!)
+Berikut langkah-langkah pengerjaan soal
+1. Masukkan filter **dst port 443** pada kolom capture filter untuk menampilkan paket yang menuju port 443
+![filter](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(243).png)
+3. Berikut paket-paket yang menuju port 443 
+![paket](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(244).png)
 
-## 14
-![soal14](https://user-images.githubusercontent.com/55140514/134504096-2bc2fea0-e91b-41fc-89c2-48b1f2cc4784.png)
+## Soal 14 (Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!)
+Berikut langkah-langkah pengerjaan soal nomor 14
+1. Masukkan filter **dst host kemenag.go.id** pada kolom capture filter untuk menngambil paket
+![filter](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(239).png)
+3. Buka situs **https://www.kemenag.go.id/** agar paket dapat diambil oleh wireshark
+![situs](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(240).png)
+5. Berikut paket yang tujuannya ke **https://www.kemenag.go.id/**
+![paket](https://raw.githubusercontent.com/ALuthfiH/Image/main/Screenshot%20(241).png)
+
 
 ## Soal 15 (Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!)
 Berikut langkah-langkah pengerjaan soal nomor 15
